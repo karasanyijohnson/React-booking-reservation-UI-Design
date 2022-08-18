@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faBed, faPlane, faCar, faTaxi} from '@fortawesome/free-solid-svg-icons'
+import {faBed, faPlane, faCar, faTaxi, faCalendarDays, faPerson} from '@fortawesome/free-solid-svg-icons'
 import './header.css'
 const Header =()=>{
     return(
@@ -32,6 +32,22 @@ const Header =()=>{
                 Get rewarded for your travel- unlock instant savings of 10% with free JohnsonBooking Account
             </p>
             <button className="headerBtn">Sign In/Register</button>
+            <div className="headerSearch">
+                <div className="headerSearchItem">
+                <FontAwesomeIcon icon={faBed} className="headerIcon" />
+                <input type="text" 
+                placeholder='Where are you going' 
+                className='HeaderSearchInput' /> 
+                </div>
+                <div className="headerSearchItem">
+                <FontAwesomeIcon icon={faCalendarDays} className="" />
+                <span className='headerSearchText'>date to date</span>
+                </div>
+                <div className="headerSearchItem">
+                <FontAwesomeIcon icon={faPerson} className="headerIcon" />
+                <span className='headerSearchText'>2 adult 2 children 1 romm</span> 
+                </div>
+            </div>
             </div>
         </div>
     )
