@@ -7,7 +7,7 @@ const List = () => {
   return (
     <div>
       <Navbar />
-      <Header />
+      <Header type="List"/>
     </div>
   );
 };
