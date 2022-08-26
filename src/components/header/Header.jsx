@@ -102,6 +102,7 @@ navigate("/hotels", {state:{destination,date,options}})
                 editableDateInputs={true}
                 onChange={(item) => setDate([item.selection])}
                 moveRangeOnFirstSelection={false}
+                minDate={new Date()}
                 ranges={date}
                 className="date"
               />
