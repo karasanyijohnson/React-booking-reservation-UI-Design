@@ -16,7 +16,17 @@ const SearchItem = () => {
         <span className="siCancelOp">Free cancellation</span>
         <spam className="siCancelOpSubtitle">You can cancel later, so lock in this great price today</spam>
       </div>
-      <div className="siDetails">Details</div>
+      <div className="siDetails">
+        <div className="siRating">
+          <span>Excellent</span>
+          <button>8.9</button>
+        </div>
+        <div className="siDetailTexts">
+          <span className="siPrice">$123</span>
+          <span className="siTaxop">Includes taxes and fees</span>
+          <button className="siCheckButton">See Availability</button>
+        </div>
+      </div>
     </div>
   );
 };
