@@ -87,7 +87,6 @@ const List = () => {
             <SearchItem/>
             <SearchItem/>
             <SearchItem/>
-            {/* Stopped at 1:30 */}
           </div>
         </div>
       </div>
