@@ -42,12 +42,12 @@ const Hotel = () => {
       <Header type="List" />
       <div className="hotelContainer">
         {open && <div className="slider">
-          <FontAwesomeIcon icon={faCircleXmark}/>
+          <FontAwesomeIcon icon={faCircleXmark} className="close" onClick={()=>setOpen(false)}/>
+          <FontAwesomeIcon icon={faCircleArrowLeft} className="arrow"/>
           <div className="slideWrapper">
-            <img src={photos[slideNumber].src} alt="" />
+            <img src={photos[slideNumber].src} alt=""  className="slideImg"/>
           </div>
-          <FontAwesomeIcon icon={faCircleArrowLeft}/>
-          <FontAwesomeIcon icon={faCircleArrowRight}/>
+          <FontAwesomeIcon icon={faCircleArrowRight} className="arrow"/>
           </div>}
         <div className="hotelWrapper">
           <button className="bookNow">Reserve or Book Now!</button>
