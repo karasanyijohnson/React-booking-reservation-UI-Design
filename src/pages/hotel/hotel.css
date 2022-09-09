@@ -1,6 +1,7 @@
 .hotelContainer{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
 }
 .hotelWrapper{
@@ -50,6 +51,7 @@ width: 33%;
 .hotelImg{
     width: 100%;
     object-fit: cover;
+    height:200px;
 }
 .hotelDetails{
     display: flex;
@@ -71,4 +73,19 @@ width: 33%;
 .hotelDetailsPrice>h1{
     font-size: 20px;
     color: #555;
+}
+.hotelDetailsPrice>span{
+    font-size: 14px;
+}
+.hotelDetailsPrice>h2{
+    font-weight: 300;
+}
+.hotelDetailsPrice>button{
+  border: none;
+  padding: 10px 20px;
+  background-color: #0071c1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
 }
