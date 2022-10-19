@@ -32,7 +32,7 @@ const PropertyList =()=>{
                 </div>
             </div>
             <div className="pListItem">
-                <img src="https://cf.bstatic.com/xdata/images/hotel/square200/383654453.webp?k=2b7a68296c5e3babccd6c16d8bccf6709bcd1ada5cb0d7a7a82cfd9100596c5d&o=&s=1" alt="" className="pListImg" />
+            <img src="https://cf.bstatic.com/xdata/images/hotel/square200/384050431.webp?k=c16a143c955af442e9a88cfe699627f2725dbf2e38bfbc809149384ca079161b&o=&s=1" alt="" className="pListImg" />
                 <div className="pListTitles">
                     <h1>Cabins</h1>
                     <h2>234 hotels</h2>
