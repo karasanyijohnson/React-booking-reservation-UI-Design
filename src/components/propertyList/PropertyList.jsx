@@ -32,6 +32,8 @@ const PropertyList = () => {
         </>
       )}
     </div>
+
+  
   );
 };
 export default PropertyList;
