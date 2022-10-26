@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useContext} from "react";
 import "./hotel.css";
 import NavBar from "../../components/navBar/Navbar";
 import Header from "../../components/header/Header";
@@ -14,6 +14,7 @@ import {
 import { useState } from "react";
 import useFetch from "../../hooks/useFetch";
 import { useLocation } from "react-router-dom";
+import { SearchContext } from "../../context/SearchContext";
 
 // Individual Hotel
 const Hotel = () => {
@@ -22,6 +23,8 @@ const Hotel = () => {
   const [slideNumber, setSlideNumber] = useState(0);
   const [open, setOpen] = useState(false);
   const { data, loading, error } = useFetch(`/hotels/find/${id}`);
+  const {dates}= useContext(SearchContext)
+  console.log(dates)
   
   const handleOpen = (i) => {
     setSlideNumber(i);
